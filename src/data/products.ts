@@ -9,20 +9,23 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    id: "1",
-    name: "Nike Air Max 270",
-    price: 149.99,
-    image: "https://via.placeholder.com/300x300?text=Nike+Air+Max",
+      id: 1,
+      title: "Red T-shirt",
+      description: "Comfortable cotton T-shirt",
+      price: 39.90,
+      image: "https://via.placeholder.com/200?text=Red+Tshirt"
   },
   {
     id: "2",
-    name: "Adidas Ultraboost",
+    title: "Adidas Ultraboost",
+    description: "Comfortable cotton T-shirt",
     price: 129.99,
     image: "https://via.placeholder.com/300x300?text=Adidas+Ultraboost",
   },
   {
     id: "3",
-    name: "Puma RS-X",
+    title: "Puma RS-X",
+    description: "Comfortable cotton T-shirt",
     price: 109.99,
     image: "https://via.placeholder.com/300x300?text=Puma+RS-X",
   },
