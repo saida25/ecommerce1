@@ -1,8 +1,10 @@
+"use client";
 import Image from "next/image";
 // src/app/page.tsx
 import Header from "@/components/Header";
 import { products } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
+
 
 export default function Home() {
   return (

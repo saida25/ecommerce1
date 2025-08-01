@@ -2,8 +2,10 @@
 'use client';
 import { ShoppingCart } from 'lucide-react';
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 export default function Header() {
+const { cartItems } = useCart();
   return (
     <header className="bg-white shadow-md p-4 flex justify-between items-center">
       <div className="text-xl font-bold text-blue-600">Saida Shop</div>
@@ -16,8 +18,8 @@ export default function Header() {
       <Link href="/cart" className="relative">
       <div>
         <ShoppingCart className="w-6 h-6 text-gray-700" />
-        <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
-          0
+       <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                    {cartItems.length}
         </span>
       </div>
       </Link>
