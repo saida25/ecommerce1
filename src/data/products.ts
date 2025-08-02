@@ -1,13 +1,12 @@
 // src/data/products.ts
 
 export type Product = {
-  id: string;
-  name: string;
-  description:string;
-  price: number;
+  id: number;
+  title: string;
+  description: string;
   image: string;
+  price: number;
 };
-
 export const products: Product[] = [
   {
       id: 1,
