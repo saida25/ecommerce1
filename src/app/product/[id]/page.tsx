@@ -3,7 +3,7 @@ import { use } from 'react';
 import { products } from "@/data/products";
 import Link from 'next/link';
 
-export default async function ProductPage({ params }: { params: { id: string } }) {
+export default function ProductPage({ params }: { params: { id: string } }) {
   const product = products.find((p) => p.id.toString() === params.id);
 
   if (!product) {
