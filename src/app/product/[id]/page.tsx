@@ -2,13 +2,7 @@ import { products } from "@/data/products";
 import Link from "next/link";
 import Image from "next/image";
 
-type ProductPageProps = {
-  params: {
-    id: string;
-  };
-};
-
-export default async function ProductPage({ params }: any) {
+export default async function ProductPage({params }: any) {
   const product = products.find((p) => p.id.toString() === params.id);
 
   if (!product) {
