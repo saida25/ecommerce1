@@ -12,11 +12,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-export const metadata = {
-  title: "My Shop",
-  description: "Next.js Ecommerce demo",
-};
-
 
 export default function RootLayout({
   children,
