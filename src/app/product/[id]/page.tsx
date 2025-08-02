@@ -8,7 +8,7 @@ type ProductPageProps = {
   };
 };
 
-export default async function ProductPage({ params }: { params: { id: string } }) {
+export default async function ProductPage({ params }: any) {
   const product = products.find((p) => p.id.toString() === params.id);
 
   if (!product) {
