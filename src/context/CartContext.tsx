@@ -64,4 +64,4 @@ export function useCart() {
   throw new Error('useCart must be used within a CartProvider');
   return context;
 }
-export { CartContext, CartProvider };
+export { CartContext };
