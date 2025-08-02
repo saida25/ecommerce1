@@ -2,8 +2,9 @@ import { products } from "@/data/products";
 import Link from "next/link";
 import Image from "next/image";
 
-export default async function ProductPage({ params }: { params: { id: string } }) {
-  const product = products.find((p) => p.id.toString() === params.id);
+export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = await params;
+  const product = products.find((p) => p.id.toString() === resolvedParams.id);
 
   if (!product) {
     return <div>Product not found</div>;
